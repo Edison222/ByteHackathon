@@ -1,0 +1,18 @@
+# Flask API
+flask==3.0.3
+
+# Firebase Admin SDK (Firestore + Storage)
+firebase-admin==6.5.0
+
+# Google Generative AI (Gemini)
+google-generativeai==0.7.2
+
+# FAISS (vector search)
+faiss-cpu==1.8.0
+
+# PDF/Text parsing (optional if you’ll upload PDFs)
+PyPDF2==3.0.1
+pdfplumber==0.11.0
+
+# Utilities
+numpy==1.26.4
