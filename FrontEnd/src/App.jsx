@@ -3,6 +3,7 @@ import Dashboard from "./pages/Dashboard";
 import Courses from "./pages/CoursesPage";
 import ProtectedRoute from "./components/ProtectedRoute";
 import AuthPage from "./pages/AuthPage";
+import CourseDetail from "./pages/courseDetail";
 
 
 
@@ -28,7 +29,7 @@ function App() {
             </ProtectedRoute>
           }
         />
-
+      <Route path="/course/:id" element={<CourseDetail />} />
       </Routes>
     </Router>
   );

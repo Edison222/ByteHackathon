@@ -6,9 +6,12 @@ import {
   query,
   where,
   getDocs,
+  deleteDoc,
+  doc,
   serverTimestamp,
 } from "firebase/firestore";
 import { useAuthState } from "react-firebase-hooks/auth";
+import { useNavigate } from "react-router-dom";
 import Sidebar from "../components/Sidebar";
 import "./Courses.css";
 
@@ -19,6 +22,7 @@ export default function Courses() {
   const [courses, setCourses] = useState([]);
   const [showForm, setShowForm] = useState(false);
   const [user] = useAuthState(auth);
+  const navigate = useNavigate();
 
   // Fetch courses
   useEffect(() => {
@@ -28,7 +32,6 @@ export default function Courses() {
       const snapshot = await getDocs(q);
       setCourses(snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() })));
     };
-
     fetchCourses();
   }, [user]);
 
@@ -50,21 +53,29 @@ export default function Courses() {
       setDescription("");
       setShowForm(false);
       alert("Course added!");
+      window.location.reload(); // refresh list
     } catch (error) {
       console.error("Error adding course: ", error);
     }
   };
 
+  // Delete course
+  const deleteCourse = async (id) => {
+    try {
+      await deleteDoc(doc(db, "courses", id));
+      setCourses(courses.filter((c) => c.id !== id));
+    } catch (error) {
+      console.error("Error deleting course:", error);
+    }
+  };
+
   return (
     <div className="courses-page">
-      {/* Sidebar */}
       <Sidebar />
-
-      {/* Main content */}
-      <div className="courses-main">
+      <main className="courses-main">
         <h2 className="courses-title">My Courses</h2>
 
-        {/* If no courses */}
+        {/* Empty state */}
         {courses.length === 0 && !showForm && (
           <div className="no-courses">
             <p>You don’t have any courses yet.</p>
@@ -74,7 +85,7 @@ export default function Courses() {
           </div>
         )}
 
-        {/* Show Add Course Form */}
+        {/* Add course form */}
         {showForm && (
           <form onSubmit={addCourse} className="course-form">
             <input
@@ -109,7 +120,7 @@ export default function Courses() {
           </form>
         )}
 
-        {/* Show Course List */}
+        {/* Add button if courses exist */}
         {courses.length > 0 && (
           <div className="courses-header">
             <button onClick={() => setShowForm(true)} className="add-btn">
@@ -118,16 +129,25 @@ export default function Courses() {
           </div>
         )}
 
+        {/* Course list */}
         <div className="courses-list">
           {courses.map((course) => (
             <div key={course.id} className="course-card">
               <h3>{course.name}</h3>
               <p className="school">{course.school}</p>
               <p>{course.description}</p>
+              <div className="course-actions">
+                <button onClick={() => navigate(`/course/${course.id}`)} className="go-btn">
+                  Go to Course
+                </button>
+                <button onClick={() => deleteCourse(course.id)} className="delete-btn">
+                  Delete
+                </button>
+              </div>
             </div>
           ))}
         </div>
-      </div>
+      </main>
     </div>
   );
 }
