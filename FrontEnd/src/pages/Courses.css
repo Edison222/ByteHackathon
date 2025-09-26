@@ -4,6 +4,7 @@
     min-width: 100vw;
     min-height: 100vh;
     background: linear-gradient(135deg, #eef2ff, #dbeafe);
+    text-decoration: #000000;
 }
 
 .courses-title {
@@ -45,6 +46,7 @@
   flex-direction: column;
   gap: 1rem;
   background: #f8fafc;
+  text-decoration: #000000;
   padding: 1.5rem;
   border-radius: 0.75rem;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
@@ -55,6 +57,7 @@
 .course-form textarea {
   padding: 0.8rem;
   border: 1px solid #000000;
+  color: #000000;
   border-radius: 0.5rem;
   text-decoration: #000000;
   font-size: 1rem;
@@ -64,6 +67,7 @@
 .course-form textarea:focus {
   outline: none;
   color: #000000;
+  text-decoration: #000000;
   border-color: #2563eb;
   box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
 }
