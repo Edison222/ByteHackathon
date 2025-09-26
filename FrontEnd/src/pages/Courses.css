@@ -1,0 +1,140 @@
+.courses-container {
+  padding: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    min-width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #eef2ff, #dbeafe);
+}
+
+.courses-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+}
+
+/* Empty state */
+.no-courses {
+  text-align: center;
+  background: #f1f5f9;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  margin-bottom: 2rem;
+  color: #475569;
+}
+
+.add-btn {
+  margin-top: 1rem;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.add-btn:hover {
+  background: #1d4ed8;
+}
+
+/* Form */
+.course-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+}
+
+.course-form input,
+.course-form textarea {
+  padding: 0.8rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.course-form input:focus,
+.course-form textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.course-form button {
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.course-form button:hover {
+  background: #1d4ed8;
+}
+
+.course-form .cancel-btn {
+  background: #e2e8f0;
+  color: #475569;
+}
+
+.course-form .cancel-btn:hover {
+  background: #cbd5e1;
+}
+
+/* Courses Grid */
+.courses-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.course-card {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.course-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+  color: #1e293b;
+}
+
+.course-card .school {
+  font-size: 0.9rem;
+  color: #2563eb;
+  margin-bottom: 0.5rem;
+}
+
+.courses-page {
+  display: flex;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.courses-main {
+  flex: 1;
+  padding: 2rem;
+  background: #f9fafb;
+}
