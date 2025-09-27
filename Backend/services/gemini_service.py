@@ -30,14 +30,5 @@ def generate_response(prompt: str, system_instruction: str | None = None) -> str
     )
     return resp.text or ""
 
-def embed_text(text: str):
-    client = _get_client()
-    resp = client.models.embed_content(
-        model="models/embedding-001",
-        contents=[{"parts":[{"text": text}]}]
-    )
-    return resp.embedding
-
-
 
 

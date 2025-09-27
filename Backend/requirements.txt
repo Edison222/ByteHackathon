@@ -1,11 +1,12 @@
 # Flask API
 flask==3.0.3
+Flask-Cors==4.0.0
 
 # Firebase Admin SDK (Firestore + Storage)
 firebase-admin==6.5.0
 
 # Google Generative AI (Gemini)
-pip install google-genai
+google-genai>=0.3.0
 
 # FAISS (vector search)
 faiss-cpu==1.8.0
@@ -18,5 +19,8 @@ pdfplumber==0.11.0
 numpy==1.26.4
 
 # Embeddings
-sentence-transformers==2.2.2
+sentence-transformers>=3.0.0
 torch>=1.11.0
+
+huggingface_hub>=0.23.0
+transformers>=4.40.0
