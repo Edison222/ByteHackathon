@@ -1,0 +1,99 @@
+{
+  "courseId": "cs101",
+  "sourcesUsed": [
+    "Lecture_14.pdf"
+  ],
+  "questions": [
+    {
+      "type": "mcq",
+      "question": "What is a general concern related to polluted air? [S1]",
+      "options": [
+        "Improved lung function",
+        "Increased energy levels",
+        "Negative health impacts",
+        "Enhanced immune response"
+      ],
+      "correctIndex": 2,
+      "explanation": "[S1] implies that polluted air from Canadian wildfires causes health concerns.",
+      "citation": {
+        "tag": "S1",
+        "source": "Lecture_14.pdf",
+        "page": null
+      },
+      "id": "Q1"
+    },
+    {
+      "type": "mcq",
+      "question": "Which type of pollutants are emitted directly into the air?",
+      "options": [
+        "Primary pollutants",
+        "Secondary pollutants",
+        "Tertiary pollutants",
+        "Quaternary pollutants"
+      ],
+      "correctIndex": 0,
+      "explanation": "Primary pollutants are emitted directly into the air [S2].",
+      "citation": {
+        "tag": "S2",
+        "source": "Lecture_14.pdf",
+        "page": null
+      },
+      "id": "Q2"
+    },
+    {
+      "type": "mcq",
+      "question": "What are the primary pollutants involved in acid rain formation?",
+      "options": [
+        "Sulfur dioxide and NOx",
+        "Carbon dioxide and methane",
+        "Ozone and hydrocarbons",
+        "Ammonia and phosphates"
+      ],
+      "correctIndex": 0,
+      "explanation": "Acid rain is produced from sulfur dioxide (SO2) and nitrogen oxides (NOx) reacting with water [S3].",
+      "citation": {
+        "tag": "S3",
+        "source": "Lecture_14.pdf",
+        "page": null
+      },
+      "id": "Q3"
+    },
+    {
+      "type": "mcq",
+      "question": "What is emitted directly into the air, according to [S4]?",
+      "options": [
+        "Primary pollutants",
+        "Secondary pollutants",
+        "Air components",
+        "Reactions"
+      ],
+      "correctIndex": 0,
+      "explanation": "According to [S4], primary pollutants are emitted directly into the air.",
+      "citation": {
+        "tag": "S4",
+        "source": "Lecture_14.pdf",
+        "page": null
+      },
+      "id": "Q4"
+    },
+    {
+      "type": "mcq",
+      "question": "What happens to air pollutants during a thermal inversion?",
+      "options": [
+        "They are trapped near the surface.",
+        "They dissipate into the atmosphere.",
+        "They rise into the upper atmosphere.",
+        "They are converted into harmless gases."
+      ],
+      "correctIndex": 0,
+      "explanation": "Thermal inversions trap air pollutants near the surface, as stated in [S5].",
+      "citation": {
+        "tag": "S5",
+        "source": "Lecture_14.pdf",
+        "page": null
+      },
+      "id": "Q5"
+    }
+  ],
+  "quizId": "cs101-20250927-101515-1"
+}

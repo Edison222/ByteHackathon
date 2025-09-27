@@ -1,0 +1,100 @@
+{
+  "courseId": "cs101",
+  "sourcesUsed": [
+    "Lecture_14.pdf",
+    "Lecture_15.pdf"
+  ],
+  "questions": [
+    {
+      "type": "mcq",
+      "question": "What structure on the Holland Tunnel removes exhaust gases?",
+      "options": [
+        "Road surface",
+        "Tunnel lights",
+        "Air vents",
+        "Drainage system"
+      ],
+      "correctIndex": 2,
+      "explanation": "Air vents are specifically designed to remove exhaust gases (Lecture_14.pdf).",
+      "citation": {
+        "tag": "S1",
+        "source": "Lecture_14.pdf",
+        "page": null
+      },
+      "id": "Q1"
+    },
+    {
+      "type": "mcq",
+      "question": "According to Lecture_15.pdf, how do CFCs destroy ozone?",
+      "options": [
+        "They release chlorine atoms.",
+        "They absorb UV radiation.",
+        "They create a barrier.",
+        "They produce oxygen molecules."
+      ],
+      "correctIndex": 0,
+      "explanation": "According to Lecture_15.pdf, CFCs release chlorine atoms that catalyze ozone destruction.",
+      "citation": {
+        "tag": "S2",
+        "source": "Lecture_15.pdf",
+        "page": null
+      },
+      "id": "Q2"
+    },
+    {
+      "type": "mcq",
+      "question": "According to Lecture_14.pdf, what can polluted air cause?",
+      "options": [
+        "Health concerns",
+        "Increased tourism",
+        "Better visibility",
+        "Higher property values"
+      ],
+      "correctIndex": 0,
+      "explanation": "Lecture_14.pdf and the included article from The Express discuss health concerns related to polluted air from Canadian wildfires.",
+      "citation": {
+        "tag": "S3",
+        "source": "Lecture_14.pdf",
+        "page": null
+      },
+      "id": "Q3"
+    },
+    {
+      "type": "mcq",
+      "question": "By how much did sulfur dioxide emissions fall due to emissions trading?",
+      "options": [
+        "67%",
+        "33%",
+        "10%",
+        "90%"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sulfur dioxide emissions fell by 67% due to the emissions trading system (Lecture_15.pdf).",
+      "citation": {
+        "tag": "S4",
+        "source": "Lecture_15.pdf",
+        "page": null
+      },
+      "id": "Q4"
+    },
+    {
+      "type": "mcq",
+      "question": "What best matches the statement in (Lecture_14.pdf)?",
+      "options": [
+        "ObjectivesoThe Structure of Earth’s AtmosphereoWeather, Climate, and Atmospheric Conditions oAir pollutionoCategories: Primary and SecondaryoMajor Air pollutants and Health Impacts",
+        "ObjectivesoThe Structure of Earth’s AtmosphereoWeather, Climate, and Atmospheric Conditions oAir pollutionoCategories: Primary and SecondaryoMajor Air pollutants and Health Impacts",
+        "A partially correct paraphrase of the statement",
+        "An unrelated option"
+      ],
+      "correctIndex": 0,
+      "explanation": "The exact phrasing appears in (Lecture_14.pdf).",
+      "citation": {
+        "tag": "S5",
+        "source": "Lecture_14.pdf",
+        "page": null
+      },
+      "id": "Q5"
+    }
+  ],
+  "quizId": "cs101-20250927-103318-1"
+}

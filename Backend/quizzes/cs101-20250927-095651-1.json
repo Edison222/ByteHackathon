@@ -1,0 +1,81 @@
+{
+  "courseId": "cs101",
+  "sourcesUsed": [
+    "Lecture_14.pdf"
+  ],
+  "questions": [
+    {
+      "type": "mcq",
+      "question": "Industrial smog primarily arises from the combustion of:",
+      "options": [
+        "Coal and oil",
+        "Natural gas",
+        "Biomass",
+        "Nuclear fuel"
+      ],
+      "correctIndex": 0,
+      "explanation": "Industrial smog is a result of coal and oil combustion [S1].",
+      "citation": {
+        "tag": "S1",
+        "source": "Lecture_14.pdf",
+        "page": null
+      },
+      "id": "Q1"
+    },
+    {
+      "type": "mcq",
+      "question": "According to [S2], what characterizes air pollution?",
+      "options": [
+        "High concentrations of harmful substances",
+        "Only caused by human activities",
+        "Beneficial atmospheric additions",
+        "Low concentrations of natural substances"
+      ],
+      "correctIndex": 0,
+      "explanation": "Air pollution is defined in [S2] as harmful substances in high concentrations.",
+      "citation": {
+        "tag": "S2",
+        "source": "Lecture_14.pdf",
+        "page": null
+      },
+      "id": "Q2"
+    },
+    {
+      "type": "mcq",
+      "question": "Which gases react with water to form acid rain?",
+      "options": [
+        "Sulfur dioxide and NOx",
+        "Carbon dioxide and methane",
+        "Oxygen and hydrogen",
+        "Ozone and ammonia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sulfur dioxide (SO2) and nitrogen oxides (NOx) react with water to form sulfuric and nitric acids, respectively [S3].",
+      "citation": {
+        "tag": "S3",
+        "source": "Lecture_14.pdf",
+        "page": null
+      },
+      "id": "Q3"
+    },
+    {
+      "type": "mcq",
+      "question": "Which topic is covered, according to [S4]?",
+      "options": [
+        "Ocean currents",
+        "Air pollution",
+        "Plate tectonics",
+        "Renewable energy"
+      ],
+      "correctIndex": 1,
+      "explanation": "Air pollution is listed as a topic in [S4].",
+      "citation": {
+        "tag": "S4",
+        "source": "Lecture_14.pdf",
+        "page": null
+      },
+      "id": "Q4"
+    }
+  ],
+  "quizId": "cs101-20250927-095651-1"
+}

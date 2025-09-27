@@ -1,0 +1,100 @@
+{
+  "courseId": "cs101",
+  "sourcesUsed": [
+    "Lecture_14.pdf",
+    "Lecture_15.pdf"
+  ],
+  "questions": [
+    {
+      "type": "mcq",
+      "question": "What health issues arise from polluted air according to [S1]?",
+      "options": [
+        "Respiratory problems",
+        "Improved vision",
+        "Increased energy",
+        "Enhanced sleep"
+      ],
+      "correctIndex": 0,
+      "explanation": "[S1] implies polluted air causes health concerns such as respiratory problems.",
+      "citation": {
+        "tag": "S1",
+        "source": "Lecture_14.pdf",
+        "page": null
+      },
+      "id": "Q1"
+    },
+    {
+      "type": "mcq",
+      "question": "Which of these choices improves air quality?",
+      "options": [
+        "Energy efficient vehicles",
+        "Burning more fossil fuels",
+        "Deforestation practices",
+        "Using synthetic fertilizers"
+      ],
+      "correctIndex": 0,
+      "explanation": "Energy efficient vehicles improve air quality [S2].",
+      "citation": {
+        "tag": "S2",
+        "source": "Lecture_15.pdf",
+        "page": null
+      },
+      "id": "Q2"
+    },
+    {
+      "type": "mcq",
+      "question": "What are pollutants directly released into the air called?",
+      "options": [
+        "Primary pollutants",
+        "Secondary pollutants",
+        "Tertiary pollutants",
+        "Quaternary pollutants"
+      ],
+      "correctIndex": 0,
+      "explanation": "According to [S3], primary pollutants are emitted directly into the air.",
+      "citation": {
+        "tag": "S3",
+        "source": "Lecture_14.pdf",
+        "page": null
+      },
+      "id": "Q3"
+    },
+    {
+      "type": "mcq",
+      "question": "According to [S4], how do CFCs destroy ozone?",
+      "options": [
+        "They release chlorine atoms.",
+        "They absorb UV radiation.",
+        "They create a greenhouse effect.",
+        "They increase oxygen levels."
+      ],
+      "correctIndex": 0,
+      "explanation": "[S4] explains that CFCs release chlorine atoms, which then destroy ozone molecules.",
+      "citation": {
+        "tag": "S4",
+        "source": "Lecture_15.pdf",
+        "page": null
+      },
+      "id": "Q4"
+    },
+    {
+      "type": "mcq",
+      "question": "Which gases are major contributors to acid rain?",
+      "options": [
+        "Sulfur dioxide and nitrogen oxides",
+        "Carbon dioxide and methane",
+        "Oxygen and hydrogen",
+        "Ammonia and chlorine"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sulfur dioxide (SO2) and nitrogen oxides (NOx) react with water to form acid rain [S5].",
+      "citation": {
+        "tag": "S5",
+        "source": "Lecture_14.pdf",
+        "page": null
+      },
+      "id": "Q5"
+    }
+  ],
+  "quizId": "cs101-20250927-101547-1"
+}
