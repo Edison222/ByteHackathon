@@ -76,19 +76,12 @@ export default function Dashboard() {
           </button>
         </header>
 
-        <section className="quick-actions">
-          <div className="action-card" onClick={() => window.location.href="/courses"}>
-            <h3>📘 Courses</h3>
-            <p>Upload and manage your study material.</p>
-          </div>
-          <div className="action-card" onClick={() => window.location.href="/study"}>
-            <h3>💡 Study Session</h3>
-            <p>Ask questions and learn from your notes.</p>
-          </div>
-          <div className="action-card" onClick={() => window.location.href="/mocktest"}>
-            <h3>📝 Mock Test</h3>
-            <p>Test yourself with AI-generated quizzes.</p>
-          </div>
+        <section className="dashboard-actions">
+          <h3>Ready to get started?</h3>
+          <p>Jump into your courses and continue learning!</p>
+          <a href="/courses" className="go-courses-btn">
+            📘 Go to My Courses
+          </a>
         </section>
       </main>
     </div>

@@ -1,75 +1,93 @@
-.courses-container {
-  padding: 2rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+.courses-page {
+  display: flex;
+  min-height: 100vh;
     min-width: 100vw;
-    min-height: 100vh;
-    background: linear-gradient(135deg, #eef2ff, #dbeafe);
-    text-decoration: #000000;
+  background: #c7dcf1;
+  font-family: "Inter", system-ui, sans-serif;
 }
 
+.courses-main {
+  flex: 1;
+  padding: 2rem 3rem;
+}
+.courses-main p {
+  color: #3a4452;
+}
+.courses-main h2 {
+  color: #1e293b;
+    font-weight: 800;
+}
+
+/* Title */
 .courses-title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: #1e293b;
   margin-bottom: 1.5rem;
 }
 
-/* Empty state */
+/* Empty State */
 .no-courses {
   text-align: center;
-  background: #f1f5f9;
-  padding: 2rem;
-  border-radius: 0.75rem;
-  margin-bottom: 2rem;
-  color: #475569;
+  background: white;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
 }
 
+.no-courses p {
+  color: #475569;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+
 .add-btn {
-  margin-top: 1rem;
-  background: #2563eb;
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
   color: white;
   font-weight: 600;
-  padding: 0.7rem 1.2rem;
+  padding: 0.7rem 1.4rem;
   border: none;
   border-radius: 0.6rem;
   cursor: pointer;
-  transition: background 0.2s ease;
+  transition: all 0.25s ease;
+  box-shadow: 0 3px 8px rgba(37, 99, 235, 0.25);
 }
 
 .add-btn:hover {
-  background: #1d4ed8;
+  background: linear-gradient(135deg, #1d4ed8, #2563eb);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(37, 99, 235, 0.35);
 }
 
-/* Form */
+/* Add Course Form */
 .course-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  background: #f8fafc;
-  text-decoration: #000000;
-  padding: 1.5rem;
-  border-radius: 0.75rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   margin-bottom: 2rem;
 }
 
 .course-form input,
 .course-form textarea {
-  padding: 0.8rem;
-  border: 1px solid #000000;
-  color: #000000;
-  border-radius: 0.5rem;
-  text-decoration: #000000;
+  padding: 0.9rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.6rem;
+  color: #475569;
   font-size: 1rem;
+  background: #f9fafb;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
 }
 
 .course-form input:focus,
 .course-form textarea:focus {
   outline: none;
-  color: #000000;
-  text-decoration: #000000;
   border-color: #2563eb;
-  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
 }
 
 .form-actions {
@@ -78,18 +96,16 @@
 }
 
 .course-form button {
-  background: #2563eb;
-  color: white;
-  font-weight: 600;
-  padding: 0.7rem 1.2rem;
-  border: none;
+  padding: 0.7rem 1.4rem;
   border-radius: 0.6rem;
+  font-weight: 600;
   cursor: pointer;
-  transition: background 0.2s ease;
+  border: none;
 }
 
-.course-form button:hover {
-  background: #1d4ed8;
+.course-form button[type="submit"] {
+  background: #2563eb;
+  color: white;
 }
 
 .course-form .cancel-btn {
@@ -102,155 +118,6 @@
 }
 
 /* Courses Grid */
-.courses-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.5rem;
-}
-
-.course-card {
-  background: white;
-  border-radius: 0.75rem;
-  padding: 1.2rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.course-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-}
-
-.course-card h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.3rem;
-  color: #1e293b;
-}
-
-.course-card .school {
-  font-size: 0.9rem;
-  color: #2563eb;
-  margin-bottom: 0.5rem;
-}
-
-.courses-page {
-  display: flex;
-  min-height: 100vh;
-  min-width: 100vw;
-}
-
-.courses-main {
-  flex: 1;
-  padding: 2rem;
-  background: #f9fafb;
-}
-/* Overall layout */
-.courses-page {
-  display: flex;
-  min-height: 100vh;
-  background: #f1f5f9;
-}
-
-.courses-main {
-  flex: 1;
-  padding: 2rem;
-  background: #f9fafb;
-  border-left: 1px solid #e2e8f0;
-  overflow-y: auto;
-}
-
-/* Title */
-.courses-title {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #1e293b;
-  margin-bottom: 1.5rem;
-}
-
-/* Empty state */
-.no-courses {
-  text-align: center;
-  background: white;
-  padding: 2rem;
-  border-radius: 0.75rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  color: #475569;
-}
-
-.add-btn {
-  margin-top: 1rem;
-  background: #2563eb;
-  color: white;
-  font-weight: 600;
-  padding: 0.7rem 1.2rem;
-  border: none;
-  border-radius: 0.6rem;
-  cursor: pointer;
-  transition: background 0.2s ease;
-}
-
-.add-btn:hover {
-  background: #1d4ed8;
-}
-
-/* Form */
-.course-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  background: white;
-  padding: 1.5rem;
-  border-radius: 0.75rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  margin-bottom: 2rem;
-}
-
-.course-form input,
-.course-form textarea {
-  padding: 0.9rem;
-  border: 1px solid #d1d5db;
-  border-radius: 0.5rem;
-  font-size: 1rem;
-  background: #f9fafb;
-}
-
-.course-form input:focus,
-.course-form textarea:focus {
-  outline: none;
-  border-color: #2563eb;
-  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
-}
-
-.form-actions {
-  display: flex;
-  gap: 1rem;
-}
-
-.course-form button {
-  background: #2563eb;
-  color: white;
-  font-weight: 600;
-  padding: 0.7rem 1.2rem;
-  border: none;
-  border-radius: 0.6rem;
-  cursor: pointer;
-  transition: background 0.2s ease;
-}
-
-.course-form button:hover {
-  background: #1d4ed8;
-}
-
-.course-form .cancel-btn {
-  background: #e2e8f0;
-  color: #475569;
-}
-
-.course-form .cancel-btn:hover {
-  background: #cbd5e1;
-}
-
-/* Courses grid */
 .courses-header {
   display: flex;
   justify-content: flex-end;
@@ -263,12 +130,16 @@
   gap: 1.5rem;
 }
 
+/* Course Card */
 .course-card {
   background: white;
-  border-radius: 0.75rem;
   padding: 1.5rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 1rem;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .course-card:hover {
@@ -279,41 +150,38 @@
 .course-card h3 {
   font-size: 1.2rem;
   font-weight: 600;
+  margin-bottom: 0.3rem;
   color: #1e293b;
-  margin-bottom: 0.4rem;
 }
 
 .course-card .school {
   font-size: 0.9rem;
   color: #2563eb;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.7rem;
 }
 
 .course-card p {
   font-size: 0.95rem;
   color: #475569;
+  flex-grow: 1;
+  margin-bottom: 1rem;
 }
 
 .course-actions {
   display: flex;
   justify-content: space-between;
-  margin-top: 1rem;
-}
-
-.go-btn,
-.delete-btn {
-  padding: 0.4rem 0.8rem;
-  border: none;
-  border-radius: 0.4rem;
-  font-size: 0.85rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background 0.2s ease;
 }
 
 .go-btn {
   background: #2563eb;
   color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
 }
 
 .go-btn:hover {
@@ -323,6 +191,13 @@
 .delete-btn {
   background: #ef4444;
   color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
 }
 
 .delete-btn:hover {

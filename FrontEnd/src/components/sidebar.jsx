@@ -31,25 +31,7 @@ export default function Sidebar() {
         >
           📘 <span>Courses</span>
         </button>
-        <button
-          onClick={() => navigate("/study")}
-          className={isActive("/study")}
-        >
-          💡 <span>Study Session</span>
-        </button>
-        <button
-          onClick={() => navigate("/mocktest")}
-          className={isActive("/mocktest")}
-        >
-          📝 <span>Mock Test</span>
-        </button>
       </nav>
-
-      <div className="sidebar-footer">
-        <button onClick={handleLogout} className="logout-btn">
-          🚪 Logout
-        </button>
-      </div>
     </div>
   );
 }

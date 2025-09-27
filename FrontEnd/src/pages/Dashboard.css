@@ -105,17 +105,18 @@ body {
 .dashboard {
   display: flex;
   min-height: 100vh;
-  min-width: 100vw;
-  background: #f8fafc;
+    min-width: 100vw;
+  background: #f8fafc; /* light gray background */
+  font-family: "Inter", "Segoe UI", sans-serif;
 }
 
+/* Main Content */
 .dashboard-main {
   flex: 1;
-  padding: 2rem;
-  background: linear-gradient(135deg, #f9fafb, #eef2ff);
+  padding: 2rem 3rem;
 }
 
-/* Hero section */
+/* Hero Section */
 .dashboard-hero {
   display: flex;
   justify-content: space-between;
@@ -123,27 +124,29 @@ body {
   background: white;
   padding: 1.5rem 2rem;
   border-radius: 1rem;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
   margin-bottom: 2rem;
 }
 
 .user-info {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.2rem;
 }
 
 .user-avatar {
-  width: 55px;
-  height: 55px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  border: 2px solid #2563eb;
+  object-fit: cover;
+  border: 3px solid #2563eb; /* accent border */
 }
 
 .user-info h2 {
-  margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 700;
   color: #1e293b;
+  margin: 0;
 }
 
 .user-email {
@@ -151,51 +154,58 @@ body {
   color: #64748b;
 }
 
-/* Quick actions section */
-.quick-actions {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.5rem;
-}
-
-.action-card {
-  background: white;
-  border-radius: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.action-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-}
-
-.action-card h3 {
-  margin-bottom: 0.5rem;
-  font-size: 1.3rem;
-  color: #1e293b;
-}
-
-.action-card p {
-  font-size: 0.95rem;
-  color: #64748b;
-}
-
-/* Logout button */
+/* Logout Button */
 .btn-logout {
   background: #ef4444;
   color: white;
-  padding: 0.6rem 1.2rem;
   border: none;
-  border-radius: 0.6rem;
-  font-weight: 500;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
   cursor: pointer;
   transition: background 0.2s ease;
 }
 
 .btn-logout:hover {
   background: #dc2626;
+}
+
+/* Dashboard Actions Section */
+.dashboard-actions {
+  text-align: center;
+  background: white;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-actions h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.dashboard-actions p {
+  font-size: 1rem;
+  color: #475569;
+  margin-bottom: 1.8rem;
+}
+
+/* CTA Button */
+.go-courses-btn {
+  background: #2563eb;
+  color: white;
+  padding: 0.9rem 1.8rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.go-courses-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
 }

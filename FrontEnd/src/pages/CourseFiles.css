@@ -1,0 +1,137 @@
+.course-files {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.course-files p {
+  color: #475569;
+}
+
+.section-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+  color: #1e293b;
+}
+
+/* Upload Box */
+.upload-box {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background: #f8fafc;
+  padding: 1rem;
+  border: 2px dashed #cbd5e1;
+  border-radius: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.file-input {
+  flex: 1;
+  padding: 0.4rem;
+}
+
+.upload-btn {
+  background: #2563eb;
+  color: white;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.upload-btn:hover {
+  background: #1d4ed8;
+}
+
+/* File List */
+.files-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.file-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.file-info h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 0.3rem;
+}
+
+.file-info .meta {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.download-btn {
+  background: #10b981;
+  color: white;
+  padding: 0.5rem 0.9rem;
+  border-radius: 0.4rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.download-btn:hover {
+  background: #059669;
+}
+
+/* Empty message */
+.empty-msg {
+  text-align: center;
+  color: #475569;
+  font-style: italic;
+}
+.selected-file {
+  margin-top: 0.8rem;
+  background: #f1f5f9;
+  padding: 0.8rem 1rem;
+  border-radius: 0.6rem;
+  border: 1px solid #cbd5e1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.selected-file-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.selected-file p {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+  color: #334155;
+}
+
+.file-meta {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.clear-btn {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  border: 1px solid #ef4444;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.clear-btn:hover {
+  background: #dc2626;
+}

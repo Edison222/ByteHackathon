@@ -1,0 +1,50 @@
+.course-detail-page {
+  display: flex;
+  min-height: 100vh;
+    min-width: 100vw;
+}
+
+.course-detail-main {
+  flex: 1;
+  padding: 2rem;
+  background: #f9fafb;
+}
+
+.course-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+    color: #1e293b;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.tabs button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background: #e2e8f0;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.tabs button:hover {
+  background: #cbd5e1;
+}
+
+.tabs button.active {
+  background: #2563eb;
+  color: white;
+}
+
+.tab-content {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}

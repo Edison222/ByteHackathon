@@ -74,6 +74,7 @@ export default function Courses() {
       <Sidebar />
       <main className="courses-main">
         <h2 className="courses-title">My Courses</h2>
+        <p>Go to your course, get advantage and start learning!</p>
 
         {/* Empty state */}
         {courses.length === 0 && !showForm && (
@@ -84,7 +85,6 @@ export default function Courses() {
             </button>
           </div>
         )}
-
         {/* Add course form */}
         {showForm && (
           <form onSubmit={addCourse} className="course-form">
