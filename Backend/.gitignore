@@ -1,2 +1,5 @@
-__pycache__
 .env
+firebase_service_account.json
+__pycache__/
+*.pyc
+faiss_data/

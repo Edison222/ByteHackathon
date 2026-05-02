@@ -5,18 +5,18 @@ flask==3.0.3
 firebase-admin==6.5.0
 
 # Google Generative AI (Gemini)
-pip install google-genai
+google-genai
 
-# FAISS (vector search)
-faiss-cpu==1.8.0
+# FAISS (vector search) ✅ fixed version
+faiss-cpu==1.13.2
 
-# PDF/Text parsing (optional if you’ll upload PDFs)
+# PDF/Text parsing
 PyPDF2==3.0.1
 pdfplumber==0.11.0
 
 # Utilities
-numpy==1.26.4
+numpy>=1.26.4
 
 # Embeddings
-sentence-transformers==2.2.2
-torch>=1.11.0
+sentence-transformers>=2.2.2
+torch
